@@ -10,7 +10,7 @@ A comparative study between 5 different binary classification techniques. In par
 This section presents a brief description of the expectation maximization
 (EM) algorithm. The goal is to provide just enough information to use this technique for fitting models.
 
-## Expectation-Maximization
+### Expectation-Maximization
 The EM algorithm is a general-purpose tool for fitting parameters ***θ*** in models of the form described below:
 
 ![Theta argmax][Eq-1]
