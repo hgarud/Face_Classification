@@ -1,6 +1,6 @@
 ### Dataset Description
 
-Data set source: FDDB: Face Detection Data Set and Benchmark
+Data set source: FDDB: Face Detection Data Set and Benchmark.  
 [Link] to download the data set.
 
 Set Contains:
