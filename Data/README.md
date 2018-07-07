@@ -22,7 +22,7 @@ corresponds to **"originalPics/2002/07/19/big/img_130.jpg"**
 {face i1}  
 {face i2}  
 ..  
-..
+..  
 {face im}  
 ..  
 
