@@ -10,7 +10,7 @@ A comparative study between 5 different binary classification techniques. In par
 This section presents a brief description of the expectation maximization
 (EM) algorithm. The goal is to provide just enough information to use this technique for fitting models.
 
-### Expectation-Maximization
+## Expectation-Maximization
 The EM algorithm is a general-purpose tool for fitting parameters ***θ*** in models of the form described below:
 
 ![Theta argmax][Eq-1]
@@ -36,7 +36,7 @@ Each of these steps is guaranteed to improve the bound, and iterating them alter
 
 Now let's delve deeper into each of the five use cases:
 
-### Single Gaussian Model
+## Single Gaussian Model
 
 This is a generative classification model which assumes the entire training data follows a single Gaussian distribution.
 Thus, having a single gaussian component, the parameters can be learned from the underlying data itself. The E-M algorithm is not needed for this model.
@@ -47,7 +47,7 @@ Hence, the posterior probability is given by:
 
 where ***µ<sub>w</sub>*** and ***Σ<sub>w</sub>*** are the mean and covariance for class ***w***
 
-### Gaussian Mixture Model
+## Gaussian Mixture Model
 
 This is a generative classification model which assumes the entire training data follows a multiple Gaussian distributions, i.e. a mixture of normal distributions. The mixture of Gaussians (MoG) is a prototypical example for the EM algorithm, where the data are described as a weighted sum of ***K*** normal distributions:
 
@@ -72,7 +72,7 @@ In the **M-step**, we maximize the bound with respect to the parameters ***θ = 
 
 ![GMM-E][Eq-8]
 
-### T-Distribution Model
+## T-Distribution Model
 The height of the normal pdf falls off very rapidly as we move into the tails. The effect of this is that outliers (unusually extreme observations) drastically affect the estimated parameters. The T-distribution
 is a closely related distribution in which the length of the tails is parameterized.
 
@@ -88,7 +88,7 @@ In the **M-step**, we optimize ***µ*** and ***Σ*** using the following update 
 
 ![T-M][Eq-11]
 
-### Mixture of T-Distribution Model
+## Mixture of T-Distribution Model
 
 This is a generative model very similar to MoG and the T-DIstribution model. It employs the basic essence of MoG where the data is described as a weighted sum of ***K*** T-Distributions.
 
@@ -96,7 +96,7 @@ The **E-step** is similar to MoG where we compute a responsibility matrix by com
 
 The **M-step** is similar to single T-Distribution except expanded to accommodate multiple components.
 
-### Factor Analyzer Model
+## Factor Analyzer Model
 
 As the data are 60x60 RGB images, with the full multivariate normal distribution, the covariance matrix is a high-dimensional 10800x10800 space. There are two main problems with this approach:
 
@@ -123,7 +123,7 @@ In the **M-step**, we have the following closed-form update equations:
 
 where the function ***diag[•]*** is the operation of setting all elements of the matrix argument to zero except those on the diagonal.
 
-### References
+## References
 Prince, S.J., 2012. Computer vision: models, learning, and inference. Cambridge University Press.
 
 [Eq-1]: https://github.com/hgarud/Face_Classification/blob/master/Graphics/Eq-1.png
